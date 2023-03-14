@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}   
+
+body {
+    background-color: white; /* sets bckg colour */
+}
+
+.container {
+    width: 1024px; 
+    margin: 0 auto;
+}
+
+header .container {
+    position: relative;
+}
+header .container h1 {
+
+}
+
+h1{
+   position: absolute;
+   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   color: white;
+   font-style: italic;
+   font-size: 35px;
+   margin-top: 30px;
+   margin-left: 25px;
+   text-decoration: line-through;
+   
+ }
+ .container{
+   position: relative;
+   max-width: 1024px;
+   margin: 0 auto;
+ }
+
+  img{
+    width: 100%;
+    position:absolute;
+    z-index:-1;
+    height: 1700px;
+
+  }
+  nav a:link,
+nav a:visited {
+    text-align: center;
+    display:  block;
+    color: white;
+    font-size: 21px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 150px;
+    width: 50%;
+}
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding-top: 50px;
+      overflow: hidden;
+      background-color: transparent;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111111;
+    }
+
+header form input {
+  flex-grow: 1;
+  height: 35px;
+  padding-right: 20px;
+  margin-left: 800px;
+  margin-top: 20px;
+ 
+}
+
+.button {
+  border: 2px solid black;
+  background-color: transparent;
+  color: #e7e7e7;
+  text-decoration: 3px solid black;
+  padding: 59px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 160px;
+  margin-right: -100px;
+  margin-top: 160px;
+  align-self: center;
+}
+
+.button1 {border-radius: 50%;}
+.button2 {border-radius: 50%;}
+.button3 {border-radius: 50%;}
+
+.button {
+  border-color: black;
+  color: #e7e7e7;
+}
+
+.button:hover {
+  background: black;
+}
+
+.button2 {
+  font-size: 28px;
+  padding: 90px 28px;
+}
+h2{
+  text-align: center;
+  margin-top: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 65px;
+  display: block;
+  text-shadow: 3px 3px black;
+  
+
+}
+h3{
+  text-align: center;
+  margin-top: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 65px;
+  display: block;
+  text-shadow: 3px 3px black;
+  margin-bottom: 470px;
+  
+
+}
+.footercontainer{
+  padding-bottom: 290px;
+  background-color: white;
+  margin-top: 200px;
+  height: 50px;
+  position: relative;
+  
+}
+.fa {
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  padding: 40px 20px;
+  font-size: 30px;
+  width: 50;
+  height: 50px;
+  padding-left: 100px;
+  position: relative;
+  
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+    .fa-facebook {
+      background: black;
+      color: white;
+      margin-left: 380px;
+      margin-right: -230px;
+      margin-bottom: -200px;
+      border-radius: 10%;
+      position: relative;
+    }
+    
+    .fa-twitter {
+      background: black;
+      color: white;
+      margin-left: 380px;
+      margin-right: -230px;
+      margin-bottom: -200px;
+      border-radius: 10%;
+      position: relative;
+    }
+    .fa-instagram {
+      background: black;
+      color: white;
+      margin-left: 380px;
+      margin-right: -230px;
+      border-radius: 10%;
+      position: relative;
+    }
+p{
+  margin-left: 550px;
+  margin-top: 250px;
+  color: silver;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+@media screen and (min-width: 760px) {
+
+  .container {
+      width: 706px;
+      margin: 0 auto;
+  }
+   
+}
+
+@media screen and (min-width: 1200px) {
+
+.container {
+      width: 1168px;
+      padding: 0 16px;
+      margin: 0 auto;
+  }

@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}   
+
+body {
+    background-color: white; /* sets bckg colour */
+}
+
+
+header .container {
+    position: relative;
+}
+
+.search{
+    padding-top: -20px;
+}
+
+
+h1{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: black;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 25px;
+    text-decoration: line-through;
+    
+  }
+  .container{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  nav a:link,
+ nav a:visited {
+     text-align: center;
+     display:  block;
+     color: black;
+     font-size: 21px;
+     padding: 20px;
+     text-decoration: none;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-left: 150px;
+     width: 50%;
+ }
+   
+   ul {
+       list-style-type: none;
+       margin: 0;
+       padding-top: 50px;
+       overflow: hidden;
+       background-color: transparent;
+     }
+     
+     li {
+       float: left;
+     }
+     
+     li a {
+       display: block;
+       color: black;
+       text-align: center;
+       padding: 16px;
+       text-decoration: none;
+     }
+     
+     li a:hover {
+       background-color: white;
+       border: 2px black;
+       border-style: solid;
+     }
+ 
+ header form input {
+   flex-grow: 1;
+   height: 35px;
+   padding-right: 20px;
+   margin-left: 800px;
+   margin-top: 20px;
+  
+}
+.container2 {
+    margin-left: 340px;
+}
+input[type="radio"] {
+    margin-left: 5px;
+    margin-right: -20px;
+
+  }
+  fieldset{
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+  input{
+    
+        padding-top: 30px;
+        margin-top: 50px;
+      
+  }
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  textarea{
+    padding-top: 20px;
+    margin-top: 50px;
+    padding-right: 550px;
+  }
+
+.dropdownbutton {
+    background-color: transparent;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color:3px #ADC6DD;
+    margin-left: 280px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-right: 750px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 280px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropdownbutton {background-color: #f1f1f1;}
+  .dropdown:hover .dropdownbutton {border-color: 3px #ADC6DD;}
+
+
+  @media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+     
+}
+
+@media screen and (min-width: 1200px) {
+
+.container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+
