@@ -78,6 +78,8 @@ h1{
     margin: 0 auto;
     background-color: white;
   }
+ /* / DESKTOP STYLES HERE /
+    / NAVIGATION SECTION / */
   nav a:link,
  nav a:visited {
      text-align: center;
@@ -91,13 +93,33 @@ h1{
      margin-left: 150px;
      width: 50%;
  }
-   
+ .skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: white;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+    z-index: -1;
+  }
+  .skip-links a:focus{
+    top: 0;
+  } 
    ul {
        list-style-type: none;
        margin: 0;
        padding-top: 50px;
        overflow: hidden;
        background-color: transparent;
+     }
+     a:focus{
+        outline: 4px solid black;
      }
      
      li {
@@ -116,6 +138,7 @@ h1{
        background-color: white;
        border: 2px black;
        border-style: solid;
+       border-radius: 20%;
      }
  
  header form input {
@@ -127,8 +150,10 @@ h1{
   
 }
 .container2 {
-    margin-left: 340px;
+    margin-left: 0px;
+    
 }
+
 input[type="radio"] {
     margin-left: 5px;
     margin-right: -20px;
@@ -137,24 +162,109 @@ input[type="radio"] {
   fieldset{
     padding-top: 30px;
     margin-top: 50px;
+    text-align: center;
   }
   input{
     
         padding-top: 30px;
         margin-top: 50px;
+        text-align: center;
       
   }
   h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding-bottom: 20px;
+    text-align: center;
   }
   textarea{
     padding-top: 20px;
     margin-top: 50px;
     padding-right: 550px;
   }
-
+  button{
+    background-color: #222222;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 0px;
+}
+footer{
+    padding-top: 200px;
+}
+/* input buttons for social media set */
+.fa {
+    
+    text-decoration: none;
+    margin: 5px 5px;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    padding-left: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 2s;
+    
+    
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+      transition-duration: .3s;
+  }
+  
+  
+      .fa-facebook {
+        padding: 11px 20px;
+        background: silver;
+        color: white;
+        border-radius: 0%;
+        text-align: center;
+        display: block;
+        
+        
+      }
+      
+      .fa-twitter {
+        padding: 11px 20px;
+        background: silver;
+        color: white;
+        text-align: center;
+        border-radius: 0%;
+        display: block;
+        font-size: 40px;
+        
+      }
+      .fa-instagram {
+        padding: 11px 20px;
+        background: silver;
+        color: white;
+        text-align: center;
+        border-radius: 0%;
+        display: block;
+        
+        
+        
+      }
+      .footercontainer{
+        margin-bottom: 100px;
+      }
+      .copyright{
+        margin-left: 550px;
+        margin-top: 150px;
+        color: silver;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+  
+/* dropdown menu styles */
 .dropdownbutton {
     background-color: transparent;
     color:black;
@@ -162,11 +272,11 @@ input[type="radio"] {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     border-style: solid;
-    border-color:3px #ADC6DD;
-    margin-left: 280px;
+    border-color:3px black;
+    margin-left: 250px;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-right: 750px;
+    padding-right: 680px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -203,21 +313,48 @@ input[type="radio"] {
   .dropdown:hover .dropdownbutton {border-color: 3px #ADC6DD;}
 
 
+  /* sets media queries */
   @media screen and (min-width: 760px) {
 
     .container {
-        width: 706px;
+        width: 906px;
         margin: 0 auto;
     }
      
-}
-
-@media screen and (min-width: 1200px) {
-
-.container {
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
+  .container {
         width: 1168px;
         padding: 0 16px;
         margin: 0 auto;
     }
+  
+    nav .grid-container {
+      display: grid;
+  }
+  
+  
+      nav a:link {
 
-
+          width: 140px;
+      }
+  
+      nav {
+          display: flex; 
+      }
+  
+      nav li.current a:link,
+      nav li.current a:visited 
+  
+      
+  
+      .container{
+        width: 100%;
+      }
+     
+       
+      h1{
+        padding-left: 100px;
+      }

@@ -8,27 +8,31 @@
     <link href="css/style1.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header role="banner">
 <div class="container">
+    <!-- h1 heading, -->
         <h1> A & M GUITARS</h1>
         <img src="images/guitar.jpg"
         alt=>
         <form> 
-    
-            <input type = "text" id="search" name="search" placeholder="Search">
-            
+            <div class="container">  <!--sskip links setup. -->
+                <ul class="skip-links">
+                    <li><a href="#nav">Skip to main nav</a></li>
+                    <li><a href="#main">Skip to main content</a></li>
+                <input type = "text" id="search" name="search" placeholder="Search" >
+            </ul>
         
             
-            <button> &#128269; </button>
+                
             
             
-            
+            </div>   
         </form>
         
     </header>
   <!--spacing for the heading. -->
 
-  <nav>
+  <nav role="navigation">
     
     <div class="container">  
     <ul> 
@@ -53,7 +57,7 @@
     <h2>PREMIUM</h2>
     <h3>HAND-CRAFTED</h3>
 
-</div>
+</div> <!-- endcontainer -->
 </div>
 </body>
 <br>
@@ -66,9 +70,9 @@
 <br>
 <footer>
    <div class="footercontainer">
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
+    <a href="https://twitter.com"" class="fa fa-instagram" aria-label="link to Twitter">Twitter</a>
+    <a href="https://www.facebook.com/?stype=lo&jlou=AffUvw-MtwrPA8P0VitQSLNwS2Om5nyZKgcdgQ_MPsMu3W-NM8a3JEhWRNuA-ptX2aDXkvngNRgJN_wawySFqsuT2gz0d70CS_m9xnwY7q50bQ&smuh=33552&lh=Ac_TQ0VKQULKv3amAfs" class="fa fa-facebook" aria-label="link to facebook">Facebook</a>
+    <a href="https://www.instagram.com" class="fa fa-instagram" aria-label="link to Instagram">Instagram</a>
     
         <p>© 2022 A & M Incorporated. All rights reserved. </p>
     </div> 

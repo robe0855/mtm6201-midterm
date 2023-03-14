@@ -69,7 +69,7 @@ h1{
    color: white;
    font-style: italic;
    font-size: 35px;
-   margin-top: 30px;
+   margin-top: 70px;
    margin-left: 25px;
    text-decoration: line-through;
    
@@ -87,6 +87,8 @@ h1{
     height: 1700px;
 
   }
+ /* / DESKTOP STYLES HERE /
+    / NAVIGATION SECTION / */
   nav a:link,
 nav a:visited {
     text-align: center;
@@ -97,7 +99,7 @@ nav a:visited {
     text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 150px;
+    margin-left: 100px;
     width: 50%;
 }
   
@@ -112,7 +114,19 @@ nav a:visited {
     li {
       float: left;
     }
-    
+    a:focus{
+      outline: 4px solid black;
+    }
+    .skip-links{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      z-index: -1;
+    }
+   
+    .skip-links a:focus{
+      top: 0;
+    }
     li a {
       display: block;
       color: white;
@@ -120,17 +134,27 @@ nav a:visited {
       padding: 16px;
       text-decoration: none;
     }
-    
+    .skip-links a{
+      color: transparent;
+      padding: 1.5em 1em;
+      font-weight: bold
+      position: absolute;
+      top: -3em;
+      
+    }
     li a:hover {
       background-color: #111111;
+      border-radius: 20%;
+      opacity: 0.7;
     }
 
 header form input {
   flex-grow: 1;
   height: 35px;
   padding-right: 20px;
-  margin-left: 800px;
-  margin-top: 20px;
+  margin-left: 750px;
+  margin-top: 0px;
+  margin-bottom: 20px;
  
 }
 
@@ -196,65 +220,88 @@ h3{
   position: relative;
   
 }
+/* input buttons for social media set */
 .fa {
-  text-align: center;
+    
   text-decoration: none;
   margin: 5px 5px;
-  padding: 40px 20px;
   font-size: 30px;
-  width: 50;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
   height: 50px;
-  padding-left: 100px;
-  position: relative;
+  padding-left: 0px;
+  text-align: center;
+  margin-right: 20px;
   
   
 }
 
 .fa:hover {
     opacity: 0.7;
+    transition-duration: .3s;
 }
 
 
     .fa-facebook {
-      background: black;
+      padding: 11px 20px;
+      background: silver;
       color: white;
-      margin-left: 380px;
-      margin-right: -230px;
-      margin-bottom: -200px;
-      border-radius: 10%;
-      position: relative;
+      border-radius: 0%;
+      text-align: center;
+      display: block;
+      transition: all 2s;
+      
+      
     }
     
     .fa-twitter {
-      background: black;
+      padding: 11px 20px;
+      background: silver;
       color: white;
-      margin-left: 380px;
-      margin-right: -230px;
-      margin-bottom: -200px;
-      border-radius: 10%;
-      position: relative;
+      text-align: center;
+      border-radius: 0%;
+      display: block;
+      font-size: 40px;
+      
     }
     .fa-instagram {
-      background: black;
+      padding: 11px 20px;
+      background: silver;
       color: white;
-      margin-left: 380px;
-      margin-right: -230px;
-      border-radius: 10%;
-      position: relative;
+      text-align: center;
+      border-radius: 0%;
+      display: block;
+    }
+    .footercontainer{
+      margin-bottom: 100px;
     }
 p{
-  margin-left: 550px;
+  text-align: center;
   margin-top: 250px;
   color: silver;
   font-family: Arial, Helvetica, sans-serif;
   
 }
+button{
+  background-color: #222222;
+  border-style: solid ;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  padding: 4px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-left: 90px;
+}
 
-
+/* sets media queries */
 @media screen and (min-width: 760px) {
 
   .container {
-      width: 706px;
+      width: 906px;
       margin: 0 auto;
   }
    
@@ -267,3 +314,33 @@ p{
       padding: 0 16px;
       margin: 0 auto;
   }
+
+  nav .grid-container {
+    display: grid;
+}
+
+
+    nav a:link {
+        float: left;
+        width: 140px;
+    }
+
+    nav {
+        display: flex; 
+    }
+
+    nav li.current a:link,
+    nav li.current a:visited 
+
+    .container{
+      display: flex;
+    }
+
+    .container{
+      width: 100%;
+    }
+    
+      
+      
+      
+    }
